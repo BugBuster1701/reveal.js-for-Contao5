@@ -2,10 +2,10 @@
  *                                                       *
  * Javascript for the Title-Footer plugin for Reveal.js  *
  *                                                       *
- * Author: Igor Leturia, Sebastian Joerz                 *
+ * Author: Igor Leturia, Sebastian Joerz, Glen Langer    *
  *                                                       *
  * License: GPL v3                                       *
- * http://www.gnu.org/copyleft/gpl.html        *
+ * http://www.gnu.org/copyleft/gpl.html                  *
  *                                                       *
  ********************************************************/
 
@@ -66,7 +66,6 @@ const initFooter = function (Reveal) {
 
   /* Method to initialize the Title-Footer footer */
 
-  // function initializeFooter(title, background, author, show_date) {
   function initializeFooter() {
     // Link to the Title-Footer CSS
 

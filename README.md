@@ -51,9 +51,10 @@ Ich bin kein JavaScript Programmierer, daher verzeiht mir die Code "Qualität" :
     - files/reveal/dist/theme/league.css
     - files/reveal/plugin/highlight/monokai.css
     - files/css/league_ninja.css
-    - jQuery laden aktiviert
-    - j_reveal_1.js aktiviert
-    - Seiten-Template: fe_page_reveal_1
+  - jQuery laden aktiviert
+  - j_reveal_1.js aktiviert
+  
+  - Seiten-Template: fe_page_reveal_1
 
 CSS Datei league_ninja.css dient um einige CSS Definitionen zu überschreiben, der Name ist natürlich frei wählbar.<br>
 Auch ein Logo wird hierüber definiert.
