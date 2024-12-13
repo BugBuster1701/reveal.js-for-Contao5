@@ -111,6 +111,7 @@ Reveal.initialize({
     footer: {
         title: 'Contao 5',
         author: 'BugBuster',
+        background: 'rgba(0,0,0,0.1)',
         show_date: true // default is false
     },
 	// Learn about plugins: https://revealjs.com/plugins/

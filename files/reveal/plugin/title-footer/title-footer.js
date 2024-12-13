@@ -46,7 +46,7 @@ const initFooter = function (Reveal) {
       });
     }
     return resultArray;
-  };
+  }
 
   function scriptPath() {
     // obtain plugin path from the script element
@@ -78,13 +78,12 @@ const initFooter = function (Reveal) {
 
     // Initialize properties according to parameters
   	var config = Reveal.getConfig().footer || {};
-	  var title = config.title;
-    var author = config.author;
-    var show_date = config.show_date;
-    var background = false;
+	  var title = config.title || '';
+    var author = config.author || '';
+    var show_date = config.show_date || false;
 
-    this.background = background || 'rgba(0,0,0,0.1)';
-    var title = title || '';
+    this.background = config.background || 'rgba(0,0,0,0.1)';
+
     if (title != '') {
       this.title = title;
     } else {
@@ -105,7 +104,6 @@ const initFooter = function (Reveal) {
         }
       }
     }
-    var author = author || '';
 
     // Create the Title-Footer footer
 
@@ -137,7 +135,7 @@ const initFooter = function (Reveal) {
     }
     var div_class_reveal = document.querySelectorAll('.reveal')[0];
     div_class_reveal.appendChild(title_footer);
-  };
+  }
 
   Reveal.addEventListener('ready', function () {
     //alert("READY");
