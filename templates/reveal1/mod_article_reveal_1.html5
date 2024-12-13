@@ -1,0 +1,5 @@
+<!-- mod_article 4 reveal -->
+	<section class="<?= $this->class ?> block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
+	  <?= implode('', $this->elements) ?>
+	</section>
+<!-- mod_article 4 reveal Ende -->

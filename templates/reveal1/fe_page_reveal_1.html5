@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="<?= $this->language ?>"<?php if ($this->isRTL): ?> dir="rtl"<?php endif; ?>>
+<head>
+
+  <?php $this->block('head'); ?>
+    <meta charset="<?= $this->charset ?>">
+    <title><?= $this->title ?></title>
+    <base href="<?= $this->base ?>">
+
+    <?php $this->block('meta'); ?>
+      <meta name="robots" content="<?= $this->robots ?>">
+      <meta name="description" content="<?= Contao\StringUtil::substr($this->description, 320) ?>">
+      <meta name="generator" content="Contao Open Source CMS with reveal.js">
+    <?php $this->endblock(); ?>
+
+    <?php if ($this->canonical): ?>
+      <link rel="canonical" href="<?= $this->canonical ?>">
+    <?php endif; ?>
+
+    <?= $this->viewport ?>
+    <?= $this->framework ?>
+    <link rel="stylesheet" href="files/reveal/dist/reset.css">
+		<link rel="stylesheet" href="files/reveal/dist/reveal.css">
+
+    <?= $this->stylesheets ?>
+  <?php $this->endblock(); ?>
+
+  <!-- Printing and PDF exports -->
+   <script>
+       var link = document.createElement( 'link' );
+       link.rel = 'stylesheet';
+       link.type = 'text/css';
+       link.href = window.location.search.match( /print-pdf/gi ) ? 'files/reveal/css/print/pdf.scss' : 'files/reveal/css/print/paper.scss';
+       document.getElementsByTagName( 'head' )[0].appendChild( link );
+   </script>
+</head>
+<body id="top"<?php if ($this->class): ?> class="<?= $this->class ?>"<?php endif; ?><?php if ($this->onload): ?> onload="<?= $this->onload ?>"<?php endif; ?>>
+
+  <?php $this->block('body'); ?>
+
+    <div id="wrapper" class="reveal">
+      <div class="slides">
+          <?php $this->block('main'); ?>
+                <?= $this->main ?>
+          <?php $this->endblock(); ?>
+      </div>
+    </div>
+
+  <?php $this->endblock(); ?>
+
+  <?= $this->mootools ?>
+  <?= $this->jsonLdScripts ?>
+</body>
+</html>
