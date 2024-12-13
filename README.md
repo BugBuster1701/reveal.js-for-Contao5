@@ -3,12 +3,14 @@ reveal.js für Contao 5 mit einigen Plugins ergänzt. Verwendet wurde die Versio
 
 Dabei wird mittels eigenem Seiten-Template, Artikel-Template und Textelement-Template gearbeitet. Das erleichert die Erstellung der Folien / Slides. (HTML Präsentation)
 
+Der PDF Export ist auch eingebaut. Nutzung siehe https://revealjs.com/pdf-export/
+
 Für meine Webseite gebaut, kann aber für jede andere auch verwendet werden.<br>
 Dazu können dann auch einige der Dateinamen anders genannt werden, die sind derzeit durch mehrere parallele Versuche so entstanden.
 
-This is free software and can be used 'as is', for license of reveal.js please visit <a href="https://github.com/hakimel/reveal.js" target="_blank">reveal.js repository on GitHub</a> 
+This is free software and can be used 'as is', for license of reveal.js please visit https://github.com/hakimel/reveal.js repository on GitHub
 
-For questions concerning the license, installation or options of reveal.js please read <a href="https://github.com/hakimel/reveal.js" target="_blank">reveal.js repository on GitHub</a> 
+For questions concerning the license, installation or options of reveal.js please read https://github.com/hakimel/reveal.js repository on GitHub
 
 ## Anpassungen gegenüber Original - Theme / Font Lato
 
