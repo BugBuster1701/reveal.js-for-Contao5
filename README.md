@@ -1,7 +1,7 @@
 # reveal.js-for-Contao5
 reveal.js für Contao 5 mit einigen Plugins ergänzt. Verwendet wurde die Version 5.1.0.
 
-Dabei wird mittels eigenem Seitentemplate, Artikeltemplate und Textelement Template gearbeiten. Das erleichert die Erstellung der Folien. (HTML Präsentation)
+Dabei wird mittels eigenem Seiten-Template, Artikel-Template und Textelement-Template gearbeitet. Das erleichert die Erstellung der Folien / Slides. (HTML Präsentation)
 
 Für meine Webseite gebaut, kann aber für jede andere auch verwendet werden.<br>
 Dazu können dann auch einige der Dateinamen anders genannt werden, die sind derzeit durch mehrere parallele Versuche so entstanden.
@@ -38,29 +38,28 @@ Ich bin kein JavaScript Programmierer, daher verzeiht mir die Code "Qualität" :
 
 ## Nutzung - Theme Definitionen
 - neues Theme anlegen
-- Ordner: files/reveal
-- Templates-Ordner: reveal1
+  - Ordner: files/reveal
+  - Templates-Ordner: reveal1
 
 - Seitenlayout darin anlegen
-- Zeilen nur Hauptzeile
-- Spalten nur Hauptspalte
+  - Zeilen nur Hauptzeile
+  - Spalten nur Hauptspalte
 
-- Externe Stylesheets
-  - files/reveal/dist/theme/league.css
-  - files/reveal/plugin/highlight/monokai.css
-  - files/css/league_ninja.css
+  - Externe Stylesheets
+    - files/reveal/dist/theme/league.css
+    - files/reveal/plugin/highlight/monokai.css
+    - files/css/league_ninja.css
+    - jQuery laden aktiviert
+    - j_reveal_1.js aktiviert
+    - Seiten-Template: fe_page_reveal_1
 
-Letzteres ist um einige CSS Dinge zu überschreiben, der Name ist natürlich frei wählbar.<br>
+CSS Datei league_ninja.css dient um einige CSS Definitionen zu überschreiben, der Name ist natürlich frei wählbar.<br>
 Auch ein Logo wird hierüber definiert.
 
-- jQuery laden aktiviert
-- j_reveal_1.js aktiviert
-
-In dieser js Datei werden am Anfang die Plugins geladen.<br>
+In der Datei j_reveal_1.js werden am Anfang die Plugins geladen.<br>
 Die Initialisierung erfolgt am Ende der Datei.<br>
 Dort sind auch die Definitionen für den Footer zu finden.
 
-- Seiten-Template: fe_page_reveal_1
 
 # Nutzung Seiten - Artikel - Text Elemente
 - Seite anlegen mit angelegtem Seitenlayout
